@@ -1,0 +1,217 @@
+/* CSS RESET */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+/* Custome-Style */
+
+/* VARIABLES */
+:root {
+    --bg-color: rgb(253,245,232);
+    --primary-clr: rgb(55,126,128);
+    --secondry-clr: rgb(255,255,255);
+    --dark-text: rgb(60,60,60);
+    --light-text: rgb(153,153,153);
+    --accent: rgba(0,0,0,.5);
+}
+/* MY RESETS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+} 
+/* GENARAL */
+html {
+    font-size: 16px;
+}
+body {
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--bg-color);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+/* MARGINS AND PADDINGS */
+.margin {
+    margin: 1rem;
+}
+.padding {
+   padding: 32px;
+}
+/* FLEX */
+.flex {
+    display: flex;
+}
+.item-center {
+    align-items: center;
+}
+.item-start {
+    align-items: flex-start;
+}
+.item-end {
+    align-items: flex-end;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.column {
+    flex-direction: column;
+}
+.order-1 {
+    order: 1;
+}
+/* FLEX COLUMNS */
+
+.flex-30 {
+    flex: 0 1 30%;
+}
+/*  */
+/* FULL WIDTH */
+.width-full {
+    width: 100%;
+    height: 100%;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 8px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.btn:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0, .3);
+    opacity: 0.8;
+    color: #fff !important;
+}
+.primary-btn {
+    background: var(--secondry-clr);
+}
+.secondry-btn {
+    background: var(--primary-clr);
+}
+/* TEXTS */
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.font-0 {
+    font-size: 0;
+}
+/* HEADINGS */
+.heading {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--dark-text);
+    text-transform: capitalize;
+    margin-bottom: 32px;
+}
+.secondry-heading {
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.sub-title {
+    font-size: 16px;
+    color: var(--light-text);
+}
+/* PAGE HEADER */
+
+.page-header {
+    background: var(--primary-clr);   
+}
+.brand {
+    font-size: 50px;
+    color: rgb(242, 190, 93);
+    font-weight: 800;
+}
+/* MAIN */
+
+.book-info {
+    background: var(--secondry-clr);
+}
